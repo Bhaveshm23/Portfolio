@@ -1,0 +1,205 @@
+@media (min-width:768px){
+
+        .content{
+            filter:blur(0);
+        }
+        .menu-toggle{
+            display:none;
+        }
+        .site-nav{
+        height:auto;
+        position: relative;
+        background:transparent;
+        
+        }
+        span{
+            display: inline;
+        }
+        .site-nav ul{
+        display: flex;
+        justify-content: flex-end;
+        padding:1em 6em;
+        }
+        
+    
+        .site-nav a{
+        padding:0;
+        margin-left:1.8em;
+        }
+        .site-nav li:last-of-type a:last-child{ 
+    
+            
+        padding: 0.5em 1em;
+        text-align: center;
+        top:2px;
+        position: absolute;
+        margin-left:1em;
+            
+    }
+
+    .social-media-links ul{
+        display: none;
+    }
+
+    .side-social-media-links{
+        width: 3em;
+        position: fixed;
+        bottom: 0px;
+        left: 0.75em;
+        color: rgb(168, 178, 209);
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        float: left;
+        z-index: 1;
+        cursor: pointer;
+    
+        
+    }
+    
+    
+    .side-social-media-links ul{
+        margin-right:3em;
+    
+    }
+    .side-social-media-links ul li{
+        margin: 0.75em auto;
+    }
+    .side-border {
+        display: block;
+        width: 1px;
+        left: 5em;
+        height: 8em;
+        background-color: rgb(168, 178, 209);
+        }
+
+        .email-container {
+        width: 3em;
+        position: fixed;
+        bottom: 0px;
+        right: 0.75em;
+        color: rgb(168, 178, 209);
+        float: right;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .email-side-border{
+        display: block;
+        width: 1px;
+        height: 8em;
+        background-color: rgb(168, 178, 209);
+    }
+    .email-container>div>a:hover{
+        color:rgb(100, 255, 218);
+    }
+    
+    .email-container div {
+        width: 100%;
+        margin: 0px auto;
+    }
+    
+    .hUtUVZ {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .dzAcvq{
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", monospace;
+        font-size: 12px;
+        color:white;
+        letter-spacing: 0.5px;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        margin: 20px auto;
+        padding: 10px;
+    }
+        
+    .email-container a:visited{
+        color:white !important;
+    }
+    
+    .responsive-section{
+
+        padding-right:6em;
+        padding-left:6em;
+
+    }
+
+    /*  Basic Section */
+    .hi-name{
+        font-size:2rem;
+    }
+    .name,.build-things{
+        font-size:6rem;
+    }
+    .section-heading,.experience-section-heading,.work-section-heading{
+        font-size:3rem;
+    }
+    .section-heading::before,.experience-section-heading::before,.work-section-heading::before{
+        font-size:2.25rem;
+    }
+    .description{
+        font-size:2.5rem;
+        line-height: 1.2;
+    }
+    #technologies-list-grid li{
+        font-size:1.5rem;
+    }
+/* 
+    Expeirnce Section */
+   
+    #job-title{
+        font-size:2rem;
+    }
+    #work-date{
+        font-size:1.5rem;
+    }
+    .jobs-container ul{
+        font-size:1.75rem;
+    }
+}
+
+
+@media(min-width:1500px){
+    
+    /*  Basic Section */
+    .hi-name{
+        font-size:3rem;
+    }
+    .name,.build-things{
+        font-size:8rem;
+    }
+    .section-heading,.experience-section-heading,.work-section-heading{
+        font-size:4rem;
+    }
+    .section-heading::before,.experience-section-heading::before,.work-section-heading::before{
+        font-size:3rem;
+    }
+    .description{
+        font-size:3rem;
+    }
+
+    #technologies-list-grid li{
+        font-size:1.75rem;
+        margin-right: 0.2em;
+
+
+    }
+/* 
+    Expeirnce Section */
+  
+
+    #job-title{
+        font-size:3rem;
+    }
+    #work-date{
+        font-size:1.75rem;
+    }
+    .jobs-container ul{
+        font-size:2rem;
+    }
+}

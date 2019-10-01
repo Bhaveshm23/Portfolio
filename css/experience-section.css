@@ -1,0 +1,84 @@
+.experience-section-heading{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console","monospace";
+    font-weight: 600;
+    color: rgb(230, 241, 255);
+    line-height: 0.5;
+    font-size:2rem;
+    margin-bottom: 1.5em;
+    white-space: nowrap;
+    display: flex;
+    
+}
+
+.experience-section-heading::before{
+    counter-increment: section 2;
+    content: "0" counter(section) ".";
+    color: rgb(100, 255, 218);
+    font-size:1.75rem;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console","monospace";
+    position: relative;
+    font-weight:normal;
+    top:2px;
+}
+
+.experience-section-heading::after{
+    content:"";
+    justify-content: center;
+    top:0.25em;
+    width:40%;
+    margin-left:0.5em;
+    background-color: rgb(45, 57, 82);
+    height: 1px;
+    position: relative;
+   
+    
+    
+}
+
+#job-title{
+    font-weight: 600;
+    color: rgb(230, 241, 255);
+    font-size: 4rem;
+    line-height: 1.1;
+    display: block; 
+    font-size:1.6rem;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;;
+}
+
+.company-name a{
+    color:rgb(100,255,218);
+    cursor: pointer;
+}
+.company-name a:hover{
+    border-bottom: 1px solid rgb(100,255,218);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.company-name a:visited{
+    color:rgb(100,255,218);
+}
+
+#work-date{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", monospace;
+    font-size: 1.25rem;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    color: rgb(168, 178, 209);
+    margin-bottom: 2em;
+}
+
+.jobs-container ul{
+    padding:0;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console","monospace";
+    font-size: 1.5rem;
+    color: rgb(136, 146, 176);   
+}
+
+.jobs-container ul li{
+    padding:1.5em;
+}
+.jobs-container ul li::before{
+    content: "▹";
+    position: relative;
+    color: rgb(100, 255, 218);
+    line-height: 20px;
+}

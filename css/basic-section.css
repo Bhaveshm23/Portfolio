@@ -1,0 +1,65 @@
+.basic-section{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 8em 2em;
+    position: relative;
+
+}
+
+.hi-name{
+    color:rgb(100, 255, 218);
+    font-size: 1.75rem;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console","monospace";
+    font-weight: normal;
+    margin-bottom: 0.25em;
+}
+
+.name{
+    font-weight: 700;
+    color: rgb(230, 241, 255);
+    font-size: 5rem;
+    line-height: 1.1;
+    display: block;  
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+.build-things{
+    font-size: 80px;
+    font-size: 5rem;
+    line-height: 1;
+    color: rgb(136, 146, 176);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+.description{
+    color: rgb(136, 146, 176);
+    line-height: 1.5;
+    font-family: "Calibre", "San Francisco", "SF Pro Text","Roboto", "Helvetica Neue", "Segoe UI", Arial, sans-serif;;
+    font-size: 2rem;
+    margin-top: 1em;
+    max-lines: 3;
+}
+
+
+.get-in-touch{
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", "monospace";
+    cursor: pointer;
+    border:1px solid rgb(100, 255, 218);
+    border-radius: 3px;
+    padding:0.75em 0.75em;
+    position: absolute;
+    margin-top:2em;
+    text-decoration: none;
+   
+}
+
+
+.basic-section a:hover,a:focus{
+    text-decoration: none;
+    color: rgb(100, 255, 218);
+    
+
+}
