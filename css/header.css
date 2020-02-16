@@ -165,7 +165,7 @@ for blurring the content */
 /* 
 toggle class of side nav  */
 .site-nav--open{
-    height:auto;
+  height:auto;
     border-radius: 3px;
   }
 
