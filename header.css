@@ -1,0 +1,240 @@
+html{
+    scroll-behavior: smooth;
+    height:100%;
+    margin:0;
+
+}
+
+body{
+    height:100%;
+    background: rgb(10, 25, 47) !important;
+    margin:0;
+
+}
+
+
+header{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console";
+    color:rgb(204, 214, 246);
+    background-color: rgb(10, 25, 47);
+    width: 100%;
+    height:80px;
+    position:fixed;
+    z-index:100;
+    top:0;
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+    transform: translateY(0px);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    transition: all 0.5s ease;
+    
+}
+.nav-container{
+    width:95%;
+    margin-top:2em;
+
+    
+}
+header::after{
+    content:'';
+    clear:both;
+    display:block;
+  }
+  
+
+.logo{
+    font-weight:700;
+    float: left;
+    position: relative;
+    top:-0.75em;
+    left:0.5em;
+}
+.logo a{
+    text-decoration: none;
+    color:rgb(204, 214, 246);
+}
+
+.logo a:hover{
+    color:rgb(100, 255, 218);
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.site-nav{
+    position: absolute;
+    background-color:rgb(10, 25, 47);
+    top:100%;
+    right:0;
+/*   removes the side nav  */
+    height:0;
+    overflow:auto;
+  
+
+}
+.site-nav ul{
+    list-style: none;
+    /* font-size:1.3rem; */
+    margin: 0;
+    padding: 2em;
+
+}
+
+.site-nav li:last-of-type a:last-child{ 
+    border: 1px solid rgb(100, 255, 218);
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 1em 0.5em;
+    margin-left:3em;
+    margin-right:3em;
+
+   
+}
+
+.site-nav li:last-of-type a:last-child:visited{
+    color:rgb(100, 255, 218);
+}
+.site-nav a{
+    text-decoration:none;
+    color:rgb(204, 214, 246);
+    display: block;
+    padding:0.75em 4em;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.site-nav a:hover, a:focus{
+    color:rgb(100, 255, 218);
+    text-decoration:none;
+
+}
+
+span{
+    color:rgb(100, 255, 218);
+    display: block;
+    text-align: center;
+ 
+}
+
+/*Menu Toggle */
+.menu-toggle{
+    padding:1em;
+    position:absolute;
+    cursor: pointer;
+    right:1.5em;
+    top:1.5em;
+}
+
+/* using pseudo elments to make the upper and lower lines of hamburger rember to give content:'' and set display block. */
+.hamburger{
+    background:rgb(100, 255, 218);
+    height:2.5px;
+    width:2.25em;
+    border-radius:3px;
+    direction:rtl; /*TO set the direction for the adjusting the width of hamburger */
+    transition: all ease-in-out 500ms;
+
+}
+
+.hamburger::before{
+    content:'';
+    display:block;
+    background:rgb(100, 255, 218);
+    height:3px;
+    width:3em;
+    border-radius:3px;
+    transform:translateY(-8px);
+    transition: all ease-in-out 500ms;
+
+}
+
+.hamburger::after{
+    content:'';
+    display:block;
+    background:rgb(100, 255, 218);
+    height:3px;
+    width:1.5em;
+    border-radius:3px;
+    transform:translateY(5px);
+    transition: all ease-in-out 500ms;
+
+}
+
+/* 
+for blurring the content */
+ .content{
+    filter:blur(5px);
+} 
+/* 
+toggle class of side nav  */
+.site-nav--open{
+  height:auto;
+    border-radius: 3px;
+  }
+
+  /* 
+making X so remove the hamburger::before on click */
+.open .hamburger::before{
+    opacity:0;
+  }
+
+  /* changing the hamburger on click to make the X*/
+
+  .open .hamburger{
+      transform: rotate(45deg);
+  }
+
+  /* rotating the hamburger to 90 and translating it because there was a space between the hamburger and hamburger after, also making the width same as hamburger to make a perfect X */
+.open .hamburger::after{
+    transform:translateY(-3px) rotate(-90deg);
+    width:2.25em;
+  } 
+
+
+  /* Navbar scroll */
+  .hidden{
+    transform: translate3d(0,-100%,0);
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 50px 50px -10px;
+        
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(2, 12, 27);
+    color: rgb(136, 146, 176);
+    text-align: center;
+    height: auto;
+    min-height: 70px;
+    padding:1em;
+}
+
+
+.social-media-links ul{
+    display:flex;
+   justify-content: center;
+   max-width:100%;
+   padding:0;
+    
+}
+.social-media-links ul li{
+    margin-right:1em;
+}
+
+
+ /*Grow on hover*/
+.grow{
+    transition: all .2s ease-in-out;
+}
+.grow:hover{
+    transform: scale(1.1);
+   
+}
+
+/*Float on hover */
+.float-item{
+    transition: all .2s ease-out;
+}
+.float-item:hover{
+    transform: translateY(-4px);
+}
+
+  
