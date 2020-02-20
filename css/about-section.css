@@ -35,7 +35,9 @@
     
     
 }
-
+.justify-para{
+    text-align: justify;
+}
  #technologies-list-grid{
     display: grid;
     grid-template-columns: minmax(140px, 200px) minmax(140px, 200px);

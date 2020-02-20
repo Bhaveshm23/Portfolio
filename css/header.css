@@ -188,6 +188,8 @@ making X so remove the hamburger::before on click */
   } 
 
 
+
+
   /* Navbar scroll */
   .hidden{
     transform: translate3d(0,-100%,0);
@@ -207,7 +209,13 @@ footer{
     padding:1em;
 }
 
-
+/* No "side" social media links and email container for small screens*/
+.side-social-media-links ul{
+    display: none;
+}
+.email-container{
+    display: none;
+}
 .social-media-links ul{
     display:flex;
    justify-content: center;

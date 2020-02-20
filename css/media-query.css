@@ -54,13 +54,13 @@
         float: left;
         z-index: 1;
         cursor: pointer;
-    
-        
+       
     }
     
     
     .side-social-media-links ul{
         margin-right:3em;
+        display: block;
     
     }
     .side-social-media-links ul li{
@@ -83,6 +83,7 @@
         float: right;
         z-index: 1;
         cursor: pointer;
+        display: block;
     }
     .email-side-border{
         display: block;

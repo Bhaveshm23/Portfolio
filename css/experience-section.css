@@ -50,7 +50,7 @@
     cursor: pointer;
 }
 .company-name a:hover{
-    border-bottom: 1px solid rgb(100,255,218);
+    border-bottom: 2px solid rgb(100,255,218);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 .company-name a:visited{
@@ -66,15 +66,20 @@
     margin-bottom: 2em;
 }
 
+.jobs-container{
+    margin-bottom: 1.5em;
+}
+
 .jobs-container ul{
-    padding:0;
+    padding:1em;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console","monospace";
     font-size: 1.5rem;
+    text-align: justify;
     color: rgb(136, 146, 176);   
 }
 
 .jobs-container ul li{
-    padding:1.5em;
+    padding:0.2em;
 }
 .jobs-container ul li::before{
     content: "▹";
@@ -82,3 +87,4 @@
     color: rgb(100, 255, 218);
     line-height: 20px;
 }
+
